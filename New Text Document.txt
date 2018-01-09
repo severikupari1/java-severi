@@ -1,0 +1,4 @@
+1    Tee Java -ohjelma, jossa kysyt k‰ytt‰j‰n etu- ja sukunimet, ja tulostat tekstin "Tervetuloa Matti Meik‰l‰inen Javan ihmeelliseen maailmaan!!
+2    Tee Java-ohjelma, jossa kysyt kulutetun bensiinin (litroja) ja kuljetun matkan (km) ja ohjelma tulostaa kulutuksen/100km. Huolehdi poikkeusk‰sittelyll‰, ett‰ v‰‰r‰nlaiset syˆtteet eiv‰t kaada sovellusta.
+3    Tee jaa-ohjelma, jossa esittelet taulukon, jossa p‰iv‰n oppitunnit (8). K‰yt‰ taulukon koon m‰‰rittelyss‰ vakiota. Kysy k‰ytt‰j‰lt‰ kunkin tunnin aihe. Ei tarvitse k‰ytt‰‰ for-lausetta. Tulosta lopuksi p‰iv‰n ohjelma
+
