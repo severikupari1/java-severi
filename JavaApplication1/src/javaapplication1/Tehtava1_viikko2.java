@@ -24,10 +24,17 @@ public class Tehtava1_viikko2 {
       Scanner lukija;
       lukija = new Scanner(System.in);
       
+      
     try{
       Properties p = new Properties();
-      p.load(new FileInputStream("vkpaivat.ini")); 
+      p.load(new FileInputStream("src/javaapplication1/viikonpaivat.properties")); 
+      int i;
+      
       //System.out.println("user = " + p.getProperty("DBuser"));
+      
+      
+      System.out.println(p.getProperty("1"));
+      
       
       System.out.println("Milläs kielellä haluat tiedot? 1-suomi 2-enlanti 3-saksa");
       
@@ -36,15 +43,24 @@ public class Tehtava1_viikko2 {
       switch(kieli){
           case 1:
               //suomi
-              
+              for(i = 1;i <= 7;i++)
+              {                  
+                  System.out.println(p.getProperty(Integer.toString(i)));
+              }
               break;
           case 2:
-              //enkku
-              
+              //enkku2
+              for(i = 8;i <= 14;i++)
+              {                  
+                  System.out.println(p.getProperty(Integer.toString(i)));
+              }
               break;
           case 3:
               //saksa
-              
+              for(i = 15;i <= 21;i++)
+              {                  
+                  System.out.println(p.getProperty(Integer.toString(i)));
+              }
               break;    
            
       }
