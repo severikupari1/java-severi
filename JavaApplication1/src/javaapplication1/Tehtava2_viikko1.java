@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * @author s704383
  */
-public class tehtava2 {
+public class Tehtava2_viikko1 {
     //Laadi ohjelma, joka kysyy käyttäjältä seitsemän viikonpäivän sademäärät, jotka se tulostaa näytölle. Käytä ohjelmassasi vakiota ja taulukkoa. 
     
     public static void main(String[] args) {
