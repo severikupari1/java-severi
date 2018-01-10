@@ -32,10 +32,10 @@ public class tehtava1 {
     
     public static void main(String[] args) {
         // TODO code application logic here
-        int ika;
+        byte ika;
         float pituus;
         float paino;
-        int ajokorttimuuttuja;
+        byte ajokorttimuuttuja;
         boolean ajokortti = false;
         
         Locale.setDefault(Locale.ENGLISH);
@@ -44,13 +44,13 @@ public class tehtava1 {
 
        try {
         System.out.println("Annappas ikäsi");
-        ika = lukija.nextInt();
+        ika = lukija.nextByte();
         System.out.println("Annappas Pituutesi metreinä");
         pituus = lukija.nextFloat();
         System.out.println("Annappas painosi");
         paino = lukija.nextFloat();       
         System.out.println("Omistatko ajokortin? 1- Kyllä, 2- Ei");
-        ajokorttimuuttuja = lukija.nextInt();
+        ajokorttimuuttuja = lukija.nextByte();
         
            if (ajokorttimuuttuja == 1) 
            {
