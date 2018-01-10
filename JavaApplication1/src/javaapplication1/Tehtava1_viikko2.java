@@ -33,7 +33,7 @@ public class Tehtava1_viikko2 {
       //System.out.println("user = " + p.getProperty("DBuser"));
       
       
-      System.out.println(p.getProperty("1"));
+     // System.out.println(p.getProperty("1"));
       
       
       System.out.println("Milläs kielellä haluat tiedot? 1-suomi 2-enlanti 3-saksa");
