@@ -24,20 +24,22 @@ public class tehtava2 {
         Scanner lukija;
         lukija = new Scanner(System.in);
         int i;
-        String[] Viikonpaivat = {"maanantaina","tiistaina","Keskiviikkona","torstaina","perjantaina","lauantaina","sunnuntaina"}; 
-        double[] sademaara = null;
+        String[] viikonpaivat = {"maanantaina","tiistaina","Keskiviikkona","torstaina","perjantaina","lauantaina","sunnuntaina"}; 
+        double[] sademaara = new double[10];
+         
+        
         
        try {
         
        
         for(i = 0; i < 7;i++){
-            System.out.println("sademäärä " + Viikonpaivat[i]);
+            System.out.println("sademäärä " + viikonpaivat[i]);
             sademaara[i] = lukija.nextDouble();
         }
        
        for(i = 0; i < 7;i++){
            
-            System.out.println("sademäärä " + Viikonpaivat[i] + "oli" + sademaara[i]);    
+            System.out.println("sademäärä " + viikonpaivat[i] + " oli " + sademaara[i]);    
         }
        }
         catch (InputMismatchException e) {
