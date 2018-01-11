@@ -5,10 +5,11 @@
  */
 package javaapplication1;
 
-import java.util.Arrays;
-import java.util.InputMismatchException;
-import java.util.Locale;
-import java.util.Scanner;
+import java.lang.reflect.Array;
+import java.util.Arrays; //array summa yms...
+import java.util.InputMismatchException; //error handling
+import java.util.Locale; //locaali asetukset
+import java.util.Scanner; //lukija yms
 
 /**
  *
@@ -20,20 +21,20 @@ import java.util.Scanner;
 public class Tehtava2_viikko2 {
     public static void main(String args[]){
         
+        
+        
         Locale.setDefault(Locale.ENGLISH);
         Scanner lukija = new Scanner(System.in);   
         int i;
-        double[] kuukausitulot = new double[13];
-        
-        try {
-            
+        double[] kuukausitulot = new double[13];       
+        try {           
             for (i = 1; i < 13; i++) {
                 System.out.println("Annappas " + i + " kuukauden tulo");
                 kuukausitulot[i] = lukija.nextDouble();
-            }
-                   
-            System.out.println(Arrays.stream(kuukausitulot).sum());
-            System.out.println(Arrays.stream(kuukausitulot).max().getAsDouble());
+            }       
+            System.out.println("Kokonaistulot ovat " + Arrays.stream(kuukausitulot).sum()); //Tulostetaan lukujen summa
+            System.out.println("Keskiarvoinen kuukausikohtainen tulo on " + Arrays.stream(kuukausitulot).average().getAsDouble());
+            System.out.println("Suurin kuukausikohtainen tulo on " + Arrays.stream(kuukausitulot).max().getAsDouble()); //tulostetaan suurin arvo taulukosta
         } catch (InputMismatchException e) {
             System.out.println("Virhe syötteiden lukemisessa");
             System.exit(0);
