@@ -5,7 +5,7 @@
  */
 package javaapplication1;
 
-import java.lang.reflect.Array;
+//import java.lang.reflect.Array;
 import java.util.Arrays; //array summa yms...
 import java.util.InputMismatchException; //error handling
 import java.util.Locale; //locaali asetukset
