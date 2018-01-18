@@ -12,7 +12,7 @@ package viikko3_valmis;
 import java.util.Scanner;
 
 
-public class Viikko3 {
+public class Viikko3_tehtava1 {
 
     /**
      * @param args the command line arguments
