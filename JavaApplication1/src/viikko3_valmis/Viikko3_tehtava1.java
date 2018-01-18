@@ -26,9 +26,7 @@ public class Viikko3_tehtava1 {
         Scanner lukija;
         lukija = new Scanner(System.in);
         
-        
-                
-        
+  
         do {
             System.out.println("1- laske ympyrän pinta-ala 2-pallon tilavuus 3-lopeta");
             kysymys = lukija.nextInt();
