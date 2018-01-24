@@ -44,6 +44,11 @@ public class Teos {
         hävinnyt;
     } 
     
+    public void Tulosta(){
+        System.out.printf("Tekijä %s \n teoksennimi %s \n genre %s \n isbn %s \n sivumaara %d\n", tekija ,teoksennimi,genre,isbn,sivumaara);
+    }
+        
+    
     
 
     /**
