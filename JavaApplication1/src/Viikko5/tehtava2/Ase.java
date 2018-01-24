@@ -14,11 +14,12 @@ public class Ase {
         private Bonus bonus;
         private Vahinko vahinko;
         private Asetyyppi asetyyppi;
+
     
     
   	public enum Bonus {
-		LIEVÄ(10), KESKI(50), KOVA(100);
-		private int bonus;
+		BONUSLIEVÄ(10), BONUSKESKI(50), BONUSKOVA(100);
+		private final int bonus;
  
 		private Bonus(int bonus) {
 			this.bonus = bonus;
@@ -30,7 +31,7 @@ public class Ase {
         mieto(10),
         keskikova(50),
         kova(100);        
-        private int vahinko;
+        private final int vahinko;
         private Vahinko(int vahinko) {
         this.vahinko = vahinko;
         }    
@@ -83,4 +84,6 @@ public class Ase {
     public void setAsetyyppi(Asetyyppi asetyyppi) {
         this.asetyyppi = asetyyppi;
     }
+
+  
 }
