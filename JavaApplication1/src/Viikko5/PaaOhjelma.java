@@ -26,7 +26,8 @@ public class PaaOhjelma {
     
     public static void main(String[] args) {
         Teos kirja1 = new Teos();
-        kirja1.se
+        kirja1.setTila(Teos.tilamuutos.saatavilla);
+        System.out.println(kirja1.getTila());
     }
     
     

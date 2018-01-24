@@ -34,16 +34,19 @@ public class Teos {
     private String genre;
     private String isbn;
     private int sivumaara;
-
+    
+    private tilamuutos tila;
     
     
     
     
-    public enum tila{
+    public enum tilamuutos{
         saatavilla, 
         lainassa, 
         hävinnyt;
     } 
+    
+    
 
     /**
      * @return the tekija
@@ -113,6 +116,20 @@ public class Teos {
      */
     public void setSivumaara(int sivumaara) {
         this.sivumaara = sivumaara;
+    }
+
+    /**
+     * @return the tila
+     */
+    public tilamuutos getTila() {
+        return tila;
+    }
+
+    /**
+     * @param tila the tila to set
+     */
+    public void setTila(tilamuutos tila) {
+        this.tila = tila;
     }
     
   
