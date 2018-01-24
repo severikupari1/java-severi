@@ -21,10 +21,14 @@ package Viikko5;
  *
  * @author s704383
  */
-public class PaaOhjelma {
+public class PaaOhjelma extends Teos {
     
     
     public static void main(String[] args) {
+        
+        
+        
+        
         
         Teos kirja1 = new Teos();     
         kirja1.setTila(Teos.tilamuutos.saatavilla);
