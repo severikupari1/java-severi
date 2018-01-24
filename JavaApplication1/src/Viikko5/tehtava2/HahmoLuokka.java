@@ -15,6 +15,7 @@ public class HahmoLuokka {
     private hahmotyyppi hahmo;
     private hahmontaso taso;
     private erityistaidot taidot;
+   
     
     public enum hahmontaso{
        taso1,
@@ -23,6 +24,7 @@ public class HahmoLuokka {
        taso4,
        taso5
    } 
+    
     
     
    public enum hahmotyyppi{
@@ -91,6 +93,20 @@ public class HahmoLuokka {
      */
     public void setTaidot(erityistaidot taidot) {
         this.taidot = taidot;
+    }
+
+    /**
+     * @return the sukupuoli
+     */
+    public sukupuoli getSukupuoli() {
+        return sukupuoli;
+    }
+
+    /**
+     * @param sukupuoli the sukupuoli to set
+     */
+    public void setSukupuoli(sukupuoli sukupuoli) {
+        this.sukupuoli = sukupuoli;
     }
     
 }

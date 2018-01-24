@@ -42,7 +42,11 @@ public class PaaOhjelma extends Teos {
         kirja1.setSivumaara(199);
         kirja1.setTekija("Severi Kupari");
         kirja1.setTeoksennimi("Javan testaus kirja");  
-        kirja1.Tulosta();     
+        kirja1.Tulosta(); 
+       
+        
+       
+       
     }
 
     public PaaOhjelma() {

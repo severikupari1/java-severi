@@ -13,6 +13,11 @@ public class PeliHahmo {
     
     
     private String nimi;
-    private 
+    private sukupuoli sukupuoli;
     
+            
+    public enum sukupuoli{
+        mies,
+        nainen
+    }
 }
