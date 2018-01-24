@@ -15,6 +15,12 @@ public class Ase {
         private Vahinko vahinko;
         private Asetyyppi asetyyppi;
 
+    public Ase(Bonus bonus, Vahinko vahinko, Asetyyppi asetyyppi) {
+        this.bonus = bonus;
+        this.vahinko = vahinko;
+        this.asetyyppi = asetyyppi;
+    }
+
     
     
   	public enum Bonus {

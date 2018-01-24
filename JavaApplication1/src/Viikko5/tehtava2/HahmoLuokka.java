@@ -31,6 +31,13 @@ public class HahmoLuokka {
     private hahmontaso taso;
     private erityistaidot taidot;
 
+    public HahmoLuokka(String nimi, hahmotyyppi hahmo, hahmontaso taso, erityistaidot taidot) {
+        this.nimi = nimi;
+        this.hahmo = hahmo;
+        this.taso = taso;
+        this.taidot = taidot;
+    }
+
   
     
     public enum hahmontaso{

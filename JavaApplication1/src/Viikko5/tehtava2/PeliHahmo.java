@@ -31,24 +31,22 @@ public class PeliHahmo {
     private String nimi;
     private sukupuoli sukupuoli;
     private int ika;
-
-    HahmoLuokka luokka;
-    Ase ase;
     
-    
-    
-    public PeliHahmo(String nimi, sukupuoli sukupuoli, int ika) {
-        this.luokka = new HahmoLuokka();
-        this.ase = new Ase();
+    HahmoLuokka hahmo = new HahmoLuokka("testi", HahmoLuokka.hahmotyyppi.varas, HahmoLuokka.hahmontaso.taso1, HahmoLuokka.erityistaidot.maxpower);
+   Ase ase = new Ase(Ase.Bonus.BONUSKOVA, Ase.Vahinko.mieto, Ase.Asetyyppi.miekka);
+    public PeliHahmo(String nimi, sukupuoli sukupuoli, int ika,Ase ase,HahmoLuokka hahmo) {
         this.nimi = nimi;
         this.sukupuoli = sukupuoli;
-        this.ika = ika;  
+        this.ika = ika;
+        this.ase = ase;
+        this.hahmo = hahmo;
     }
 
-    PeliHahmo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
     
+    
+    
+   
     
    
             
@@ -97,5 +95,10 @@ public class PeliHahmo {
      */
     public void setIka(int ika) {
         this.ika = ika;
+    }
+    
+    
+    public static void main(String[] args) {
+        PeliHahmo ukko;
     }
 }
