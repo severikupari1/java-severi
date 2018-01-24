@@ -27,9 +27,8 @@ package Viikko5.tehtava2;
 public class Hahmo {
     public static void main(String[] args) {
         PeliHahmo ukko1;
-        ukko1 = new PeliHahmo();
-        ukko1.ase.setAsetyyppi(Ase.Asetyyppi.miekka);
-        System.out.println(ukko1.ase.getAsetyyppi());
+        ukko1 = new PeliHahmo("testiukko", PeliHahmo.sukupuoli.mies, 5);
+        System.out.println(ukko1.getIka());
     }
    
 }

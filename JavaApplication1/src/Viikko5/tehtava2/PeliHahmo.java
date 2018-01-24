@@ -32,14 +32,17 @@ public class PeliHahmo {
     private sukupuoli sukupuoli;
     private int ika;
     
-    HahmoLuokka hahmo = new HahmoLuokka("testi", HahmoLuokka.hahmotyyppi.varas, HahmoLuokka.hahmontaso.taso1, HahmoLuokka.erityistaidot.maxpower);
-   Ase ase = new Ase(Ase.Bonus.BONUSKOVA, Ase.Vahinko.mieto, Ase.Asetyyppi.miekka);
-    public PeliHahmo(String nimi, sukupuoli sukupuoli, int ika,Ase ase,HahmoLuokka hahmo) {
+    /**
+     *
+     * @param nimi
+     * @param sukupuoli
+     * @param ika
+     */
+    public PeliHahmo(String nimi, sukupuoli sukupuoli, int ika) {
         this.nimi = nimi;
         this.sukupuoli = sukupuoli;
         this.ika = ika;
-        this.ase = ase;
-        this.hahmo = hahmo;
+        
     }
 
    
@@ -98,7 +101,5 @@ public class PeliHahmo {
     }
     
     
-    public static void main(String[] args) {
-        PeliHahmo ukko;
-    }
+    
 }
