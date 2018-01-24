@@ -36,9 +36,7 @@ public class Teos {
     private int sivumaara;
     
     private tilamuutos tila;
-    
-    
-    
+
     
     public enum tilamuutos{
         saatavilla, 

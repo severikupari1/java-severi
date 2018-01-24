@@ -25,7 +25,11 @@ public class PaaOhjelma {
     
     
     public static void main(String[] args) {
+        
         Teos kirja1 = new Teos();
+        
+        
+        
         kirja1.setTila(Teos.tilamuutos.saatavilla);
         System.out.println(kirja1.getTila());
         kirja1.setTila(Teos.tilamuutos.lainassa);
@@ -39,7 +43,11 @@ public class PaaOhjelma {
         kirja1.setTekija("Severi Kupari");
         kirja1.setTeoksennimi("Javan testaus kirja");
         
+        kirja1
         
+    }
+
+    public PaaOhjelma() {
     }
     
     
