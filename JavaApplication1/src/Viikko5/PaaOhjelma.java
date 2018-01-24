@@ -28,6 +28,18 @@ public class PaaOhjelma {
         Teos kirja1 = new Teos();
         kirja1.setTila(Teos.tilamuutos.saatavilla);
         System.out.println(kirja1.getTila());
+        kirja1.setTila(Teos.tilamuutos.lainassa);
+        System.out.println(kirja1.getTila());
+        kirja1.setTila(Teos.tilamuutos.hävinnyt);
+        System.out.println(kirja1.getTila());
+        
+        kirja1.setGenre("tiedekirja");
+        kirja1.setIsbn("asd1123123123");
+        kirja1.setSivumaara(199);
+        kirja1.setTekija("Severi Kupari");
+        kirja1.setTeoksennimi("Javan testaus kirja");
+        
+        
     }
     
     
