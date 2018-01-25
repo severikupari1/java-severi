@@ -38,6 +38,11 @@ public class HahmoLuokka {
         this.taidot = erityistaidot.maxpower;
     }
 
+    @Override
+    public String toString() {
+        return "HahmoLuokka{" + "nimi=" + nimi + ", hahmo=" + hahmo + ", taso=" + taso + ", taidot=" + taidot + '}';
+    }
+
   
     
   

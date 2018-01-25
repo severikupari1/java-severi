@@ -26,6 +26,11 @@ Kaikissa toteutettavissa luokissa tulee olla metodit tietojen kyselemistä ja tu
 Laadi lisäksi pääohjelma, jossa testaat luomiesi luokkien toiminnallisuuden.
  */
 public class PeliHahmo {
+
+    @Override
+    public String toString() {
+        return "PeliHahmo{" + "nimi=" + nimi + ", sukupuoli=" + sukupuoli + ", ika=" + ika + ", hahmo1=" + hahmo1 + ", ase1=" + ase1 + '}';
+    }
     
     
     private String nimi;

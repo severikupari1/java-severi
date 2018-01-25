@@ -15,6 +15,10 @@ public class PeliHahmoImpl  {
         System.out.println(ukko1.ase1.getVahinko());
         ukko1.ase1.setVahinko(Ase.Vahinko.keskikova);
         System.out.println(ukko1.ase1.getVahinko());
+        
+        
+        System.out.println(ukko1.toString());
+        
     }
     
 }

@@ -15,6 +15,11 @@ public class Ase {
         private Vahinko vahinko;
         private Asetyyppi asetyyppi;
 
+    @Override
+    public String toString() {
+        return "Ase{" + "bonus=" + bonus + ", vahinko=" + vahinko + ", asetyyppi=" + asetyyppi + '}';
+    }
+
     public Ase() {
         this.bonus = Bonus.BONUSLIEVÄ;
         this.vahinko = Vahinko.mieto;
