@@ -31,13 +31,15 @@ public class HahmoLuokka {
     private hahmontaso taso;
     private erityistaidot taidot;
 
-    public HahmoLuokka(String nimi, hahmotyyppi hahmo, hahmontaso taso, erityistaidot taidot) {
-        this.nimi = nimi;
-        this.hahmo = hahmo;
-        this.taso = taso;
-        this.taidot = taidot;
+    public HahmoLuokka() {
+        this.nimi = "testi";
+        this.hahmo = hahmotyyppi.soturi;
+        this.taso = hahmontaso.taso1;
+        this.taidot = erityistaidot.maxpower;
     }
 
+  
+    
   
     
     public enum hahmontaso{

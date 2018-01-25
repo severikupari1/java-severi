@@ -31,27 +31,17 @@ public class PeliHahmo {
     private String nimi;
     private sukupuoli sukupuoli;
     private int ika;
-    
-    /**
-     *
-     * @param nimi
-     * @param sukupuoli
-     * @param ika
-     */
+    HahmoLuokka hahmo1;
+    Ase ase1;
     public PeliHahmo(String nimi, sukupuoli sukupuoli, int ika) {
+        this.ase1 = new Ase();
+        this.hahmo1 = new HahmoLuokka();
         this.nimi = nimi;
         this.sukupuoli = sukupuoli;
-        this.ika = ika;
-        
+        this.ika = ika;    
     }
-
-   
     
     
-    
-   
-    
-   
             
     public enum sukupuoli{
         mies,

@@ -15,14 +15,12 @@ public class Ase {
         private Vahinko vahinko;
         private Asetyyppi asetyyppi;
 
-    public Ase(Bonus bonus, Vahinko vahinko, Asetyyppi asetyyppi) {
-        this.bonus = bonus;
-        this.vahinko = vahinko;
-        this.asetyyppi = asetyyppi;
+    public Ase() {
+        this.bonus = Bonus.BONUSLIEVÄ;
+        this.vahinko = Vahinko.mieto;
+        this.asetyyppi = Asetyyppi.miekka;
     }
 
-    
-    
   	public enum Bonus {
 		BONUSLIEVÄ(10), BONUSKESKI(50), BONUSKOVA(100);
 		private final int bonus;
