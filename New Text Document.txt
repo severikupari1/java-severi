@@ -1,4 +1,29 @@
-1    Tee Java -ohjelma, jossa kysyt k‰ytt‰j‰n etu- ja sukunimet, ja tulostat tekstin "Tervetuloa Matti Meik‰l‰inen Javan ihmeelliseen maailmaan!!
-2    Tee Java-ohjelma, jossa kysyt kulutetun bensiinin (litroja) ja kuljetun matkan (km) ja ohjelma tulostaa kulutuksen/100km. Huolehdi poikkeusk‰sittelyll‰, ett‰ v‰‰r‰nlaiset syˆtteet eiv‰t kaada sovellusta.
-3    Tee jaa-ohjelma, jossa esittelet taulukon, jossa p‰iv‰n oppitunnit (8). K‰yt‰ taulukon koon m‰‰rittelyss‰ vakiota. Kysy k‰ytt‰j‰lt‰ kunkin tunnin aihe. Ei tarvitse k‰ytt‰‰ for-lausetta. Tulosta lopuksi p‰iv‰n ohjelma
+1. Toteuta Teos-luokka kirjastok‰yttˆˆn. Luokan tulee sis‰lt‰‰ ainakin seuraavat attribuutit:
 
+Tekij‰, teoksen nimi, genre, ISBN, sivum‰‰r‰ ja tila. Tila-attribuutti kertoo, onko teos saatavilla, lainassa, h‰vinnyt tms.
+
+Luokan tulee sis‰lt‰‰ ainakin seuraavan toiminnallisuuden mahdollistavat metodit:
+
+Teoksen tila t‰ytyy voida muuttaa ja tarkistaa tai tulostaa.
+Teoksen tiedot t‰ytyy voida syˆtt‰‰ k‰ytt‰j‰n toimesta.
+Teoksen tiedot t‰ytyy voida tulostaa k‰ytt‰j‰lle.
+
+Laadi lis‰ksi p‰‰ohjelma, jossa testaat luomasi luokan toiminnallisuuden.
+Laadi pelihahmo-luokka, joka sis‰lt‰‰ ainakin seuraavat attribuutit:
+
+
+2. Laadi pelihahmo-luokka, joka sis‰lt‰‰ ainakin seuraavat attribuutit:
+
+Nimi, hahmoluokka (esim. soturi, varas, velho, ..), sukupuoli, ik‰ ja ase. Toteuta hahmoluokka ja ase omina luokkinaan ja k‰yt‰ niit‰ pelihahmo-luokan attribuutteina.
+
+Hahmoluokka sis‰lt‰‰ ainakin seuraavat attribuutit:
+
+Luokan nimi, hahmon taso ja erityistaidot.
+
+Ase-luokka sis‰lt‰‰ ainakin seuraavat attribuutit:
+
+Tyyppi, vahinko ja bonukset.
+
+Kaikissa toteutettavissa luokissa tulee olla metodit tietojen kyselemist‰ ja tulostamista varten. Attribuuttien tyypit voit valita parhaaksi katsomallasi tavalla.
+
+Laadi lis‰ksi p‰‰ohjelma, jossa testaat luomiesi luokkien toiminnallisuuden.
