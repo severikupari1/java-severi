@@ -12,6 +12,10 @@ package viikko6_teht2;
 public class Textbox extends Komponentti{
     private String teksti;
 
+    public Textbox(String teksti) {
+        this.teksti = teksti;
+    }
+    
     public String getTeksti() {
         return teksti;
     }

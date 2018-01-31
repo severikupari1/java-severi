@@ -12,6 +12,12 @@ package viikko6_teht2;
 public class Listbox extends Komponentti{
     private String[] tekstit;
 
+    public Listbox(String[] tekstit) {
+        this.tekstit = tekstit;
+    }
+
+    
+
     public String[] getTekstit() {
         return tekstit;
     }
