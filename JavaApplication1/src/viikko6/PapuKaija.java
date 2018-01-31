@@ -12,7 +12,7 @@ package viikko6;
 public class PapuKaija extends Elain{
     private String omistaja;
 
-    public PapuKaija(String omistaja) {
+    public void PapuKaija(String omistaja) {
         this.omistaja = omistaja;
     }
 

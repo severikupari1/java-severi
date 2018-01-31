@@ -9,22 +9,25 @@ package viikko6;
  *
  * @author s704383
  */
-public class Kissa extends Elain{
+public class Kissa extends Elain {
+
     private int elamat;
 
-    public Kissa(int elamat) {
-        this.elamat = elamat;
+    public void AsetaElamat(int uusielama) {
+        this.elamat = uusielama;
     }
-    public void PoistaElama(){
+
+    
+    public void PoistaElama() {
         if (this.elamat >= 0) {
-            this.elamat = elamat-1;
-        }
-        else{
+            elamat--;
+        } else {
             System.out.println("Elämiä ei voi vähentää, ei voi olla -1 elämää");
-        }          
+        }
     }
-    public void SelvitaElamat(){
+
+    public void SelvitaElamat() {
         System.out.println(this.elamat);
     }
-    
+
 }
