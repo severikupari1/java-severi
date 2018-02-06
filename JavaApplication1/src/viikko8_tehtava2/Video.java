@@ -37,7 +37,9 @@ public class Video extends Playable{
         this.time = time;
     }
     
-    
+        public void print(){
+        System.out.printf("director %s \n time %d\n", director,time);
+    }
     
     
     

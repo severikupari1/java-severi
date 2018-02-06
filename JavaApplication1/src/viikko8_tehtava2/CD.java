@@ -11,12 +11,17 @@ package viikko8_tehtava2;
  */
 public class CD extends Playable{
      private String artist;
+     private int time;
 
-    public CD(String artist, int playingTime, String language, String comment, String title, boolean available) {
+    public CD(String artist, int time, int playingTime, String language, String comment, String title, boolean available) {
         super(playingTime, language, comment, title, available);
         this.artist = artist;
+        this.time = time;
     }
 
    
+           public void print(){
+        System.out.printf("artist %s \n time %d\n", artist,time);
+    }
     
 }
