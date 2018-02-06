@@ -9,6 +9,8 @@ package viikko8_tehtava2;
  *
  * @author s704383
  */
-public class Playable {
+public abstract class Playable {
+    
+    
     
 }

@@ -26,7 +26,7 @@ package viikko8_tehtava2;
 
 + print()
  */
-public class Video {
+public class Video extends Playable{
        private String director;
        private String language;
        private int playingTime;
