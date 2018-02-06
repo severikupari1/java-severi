@@ -9,9 +9,8 @@ package viikko8_tehtava2;
  *
  * @author s704383
  */
-public abstract class Item {
-    //tänne kaikki mitä jokaisella itemillä pitää olla
-    
-    
-    
+public class maini {
+    public static void main(String[] args) {
+        //Täällä sit luodaan uusi itemi ja tallennetaan se databseen?? ja printtaillaan
+    }
 }

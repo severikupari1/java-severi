@@ -27,39 +27,6 @@ package viikko8_tehtava2;
 + print()
  */
 public class Video extends Playable{
-       private String director;
-       private String language;
-       private int playingTime;
-       private boolean available;
-       private String comment;
-       private String title;
-
-    public Video(String title, String director, String language, int playingTime, boolean available, String comment) {
-        this.title = title;
-        this.director = director;
-        this.language = language;
-        this.playingTime = playingTime;
-        this.available = available;
-        this.comment = comment;
-    }
-
-    public void setComment(String comment) {
-        this.comment = comment;
-    }
-
-    public boolean isAvailable() {
-        return available;
-    }
-
-    public String Print() {
-        return "Video{" + "director=" + director + ", language=" + language + ", playingTime=" + playingTime + ", available=" + available + ", comment=" + comment + ", title=" + title + '}';
-    }
-
     
     
-    
-       
-       
-       
-       
 }

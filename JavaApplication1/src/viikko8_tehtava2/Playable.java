@@ -13,8 +13,7 @@ package viikko8_tehtava2;
  */
 public abstract class Playable {
 
-    private CD soitettavat = new CD("asd", "asd", 2, true, "asd", "asd");
-    private Video video = new Video("asd", "asdasd", "asd", 0, true, "asds");
+
     
     
     
