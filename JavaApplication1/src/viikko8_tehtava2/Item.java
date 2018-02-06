@@ -24,11 +24,26 @@ public abstract class Item {
     private String  language,comment,title;
     private boolean available;
 
-    public Item(String language, String comment, boolean available) {
+    public Item(String language, String comment, String title, boolean available) {
         this.language = language;
         this.comment = comment;
+        this.title = title;
         this.available = available;
     }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public boolean isAvailable() {
+        return available;
+    }
+    
+    
+    
+    
+
+   
     
     
     

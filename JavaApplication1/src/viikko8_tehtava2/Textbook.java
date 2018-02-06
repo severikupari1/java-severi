@@ -12,16 +12,19 @@ package viikko8_tehtava2;
 public class Textbook extends Item{
 
     private int pages;
-    
+    private String author;
     
    
 //tänne sit teksibookin tiedot yms 
-
-    public Textbook(int pages, String language, String comment, String title, boolean available) {
+    public Textbook(int pages, String author, String language, String comment, String title, boolean available) {
         super(language, comment, title, available);
         this.pages = pages;
+        this.author = author;
+    }  
+
+    public void print(){
+        System.out.printf("author %s \n pages %d\n", author,pages);
     }
-    
-    
-    
+
 }
+    
