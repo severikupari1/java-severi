@@ -27,6 +27,6 @@ package viikko8_tehtava2;
 + print()
  */
 public class Video extends Playable{
-    
+    //tänne sit mitä videossa oli
     
 }

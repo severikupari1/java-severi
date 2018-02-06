@@ -11,10 +11,11 @@ package viikko8_tehtava2;
  *
  * @author s704383
  */
-public abstract class Playable {
+public abstract class Playable extends Item{
 
-
+//tähän mitä molemmilla cdllä ja videolla on! 
     
+    private int playingTime;;
     
     
     

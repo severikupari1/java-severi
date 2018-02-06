@@ -8,9 +8,21 @@ package viikko8_tehtava2;
 /**
  *
  * @author s704383
+ * - director: String //lisätty
+
+- language: String//lisätty
+
+- playingTime: Integer
+
+- available: Boolean
+
+- comment: String//lisätty
  */
 public abstract class Item {
     //tänne kaikki mitä jokaisella itemillä pitää olla
+    
+    private String director, language,comment;
+    private boolean available;
     
     
     
