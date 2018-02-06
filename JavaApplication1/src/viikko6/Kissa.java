@@ -30,4 +30,10 @@ public class Kissa extends Elain {
         System.out.println(this.elamat);
     }
 
+    @Override
+    void Puhu() {
+         //To change body of generated methods, choose Tools | Templates.
+         System.out.println("Mau olen Kisssa");
+    }
+
 }

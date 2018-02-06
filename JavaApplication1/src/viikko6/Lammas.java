@@ -19,6 +19,11 @@ public class Lammas extends Elain{
     public void setVari(Vari vari) {
         this.vari = vari;
     }
+
+    @Override
+    void Puhu() {
+        System.out.println("mooo oon lammas");
+    }
     
     public enum Vari{
         valkoinen,    

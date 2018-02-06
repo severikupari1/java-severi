@@ -5,6 +5,9 @@
  */
 package viikko6;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author s704383
@@ -37,7 +40,17 @@ public class Main {
         System.out.println(lammas1.getVari());
         lammas1.setVari(Lammas.Vari.musta);
         System.out.println(lammas1.getVari());
-
+        
+        Elain elaimet[] = new Elain[3];
+        
+        elaimet[0] = new Kissa();
+        elaimet[1] = new Lammas();
+        elaimet[2] = new PapuKaija();
+        
+        for (Elain elaimet1 : elaimet) {
+            elaimet1.Puhu();
+        }
         //lammas loppu
+
     }
 }

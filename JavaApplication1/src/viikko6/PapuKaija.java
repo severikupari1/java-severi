@@ -23,5 +23,10 @@ public class PapuKaija extends Elain{
     public void setOmistaja(String omistaja) {
         this.omistaja = omistaja;
     }
+
+    @Override
+    void Puhu() {
+        System.out.println("kwaak kwaak oon papukaija");
+    }
     
 }

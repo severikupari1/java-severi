@@ -26,7 +26,7 @@ package viikko6;
  *
  * @author s704383
  */
-public class Elain {
+public abstract class Elain {
     private String nimi;
     private boolean elossa;
 
@@ -50,5 +50,7 @@ public class Elain {
     public void setElossa(boolean elossa) {
         this.elossa = elossa;
     }
+    
+    abstract void Puhu();
     
 }
