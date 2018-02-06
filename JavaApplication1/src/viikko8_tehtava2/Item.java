@@ -38,6 +38,12 @@ public abstract class Item {
     public boolean isAvailable() {
         return available;
     }
+
+    @Override
+    public String toString() {
+        return "Item{" + "language=" + language + ", comment=" + comment + ", title=" + title + ", available=" + available + '}';
+    }
+    
     
     
     
