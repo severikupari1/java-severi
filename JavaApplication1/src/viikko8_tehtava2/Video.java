@@ -27,6 +27,18 @@ package viikko8_tehtava2;
 + print()
  */
 public class Video extends Playable{
-    //tänne sit mitä videossa oli
+
+    private String director;
+    private int time;
+
+    public Video(String director, int time, int playingTime, String language, String comment, String title, boolean available) {
+        super(playingTime, language, comment, title, available);
+        this.director = director;
+        this.time = time;
+    }
+    
+    
+    
+    
     
 }
