@@ -9,7 +9,7 @@ package viikko8_tehtava2;
  *
  * @author s704383
  */
-public class CD {
+public class CD extends Playable{
       private String artist;
        private String language;
        private int playingTime;
