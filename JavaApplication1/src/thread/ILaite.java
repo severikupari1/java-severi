@@ -5,10 +5,12 @@
  */
 package thread;
 
+import java.util.Date;
+
 /**
  *
  * @author s704383
  */
 public interface ILaite{
-    public void Ika();
+    public void Ika(Date x,Date y);
 }
