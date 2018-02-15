@@ -9,13 +9,13 @@ import java.util.Date;
 
 /**
  *
- * @author s704383
+ * @author Severi
  */
-public interface ILaite{
-
-    /**
-     *
-     * @param aika
-     */
-    public void Ika();
+public class Main {
+    public static void main(String[] args) {
+        Date date = new Date();
+        
+        System.out.println(date.toString());
+        
+    }
 }
