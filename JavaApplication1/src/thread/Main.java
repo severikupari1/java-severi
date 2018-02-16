@@ -22,13 +22,20 @@ public class Main {
         
         Potkulauta lauta = new Potkulauta(12, "tunnus", "15-02-2018", "lauta-2");
         SahkoPatteri patteri = new SahkoPatteri(12, 22, true, "tunnus", "14-02-2018", "nimi");
-        Sahkovatkain vatkain = new Sahkovatkain(22, 100, 12, true, "tunnus", "13-02-2018", "vatkain");
+        Sahkovatkain vatkain = new Sahkovatkain(22, 100, 12, true, "tunnus", "12-02-2018", "vatkain");
         
         lista.add(lauta);
         lista.add(patteri);
         lista.add(vatkain);
         
-        lista.;
+        for (Laite laite : lista) {
+            if (laite instanceof Sahkovatkain) {
+                System.out.println(((Sahkovatkain) laite).nimi);
+                System.out.println(((Sahkovatkain) laite).tunnus);
+                System.out.println(((Sahkovatkain) laite).hankintapaiva);
+                laite.Ika();
+            }
+        }
         
         
         

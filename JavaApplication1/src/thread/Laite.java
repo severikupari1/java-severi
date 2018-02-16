@@ -59,8 +59,8 @@ public abstract class Laite implements ILaite{
     @Override
     public void Ika() {
        String aika = this.hankintapaiva;
-       // SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
-        SimpleDateFormat sf1 = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat sf1 = new SimpleDateFormat("dd-MM-yyyy");
+        //SimpleDateFormat sf1 = new SimpleDateFormat("dd/MM/yyyy");
         Date laiteaika;
         Date nyt = new Date();
         try {
