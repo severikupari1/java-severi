@@ -9,7 +9,7 @@ package thread;
  *
  * @author s704383
  */
-public abstract class SahkoLaite extends Laite{
+public abstract class SahkoLaite extends Laite implements ISahkolaite{
 
    
     private double virrankulutus;
@@ -36,6 +36,14 @@ public abstract class SahkoLaite extends Laite{
     public void setPaalla(boolean paalla) {
         this.paalla = paalla;
     }
+
+    @Override
+    public void Vkulutus(double tunnit) {
+       // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.printf("Kulutus on %f ", tunnit*this.virrankulutus);
+        
+    }
+    
     
     
     
