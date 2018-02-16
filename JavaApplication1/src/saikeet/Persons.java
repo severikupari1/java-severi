@@ -12,11 +12,30 @@ import java.util.ArrayList;
  * @author s704383
  */
 public class Persons {
-   private ArrayList<Person> ihmiset = new ArrayList<Person>();
-   private int index = 0;
+   private ArrayList<Person> ihmiset = new ArrayList<>();
+   private int index;
+   private double muutos;
+
    public synchronized void LisaaIhminen(String nimi,int ika){
-       
+       if (ihmiset.isEmpty()) {
+           index = 1;
+       }
+       else{
+           index = ihmiset.size()+1;
+       } 
        ihmiset.add(new Person(index, nimi, ika) );
-       index++;
+       
    }
+   
+   public synchronized void MuutosKokoon(){
+       while (true) {  
+           muutos = ihmiset.hashCode();
+           if (ihmiset.hashCode() != muutos) {
+               System.out.println("Bingo, Nysse tuli");
+           }
+           
+           
+       }
+   }
+   
 }
