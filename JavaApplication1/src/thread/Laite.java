@@ -5,6 +5,8 @@
  */
 package thread;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
@@ -57,6 +59,21 @@ public abstract class Laite implements ILaite{
     @Override
     public void Ika() {
        String aika = this.hankintapaiva;
+       // SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat sf1 = new SimpleDateFormat("dd/MM/yyyy");
+        Date laiteaika;
+        Date nyt = new Date();
+        try {
+            
+            laiteaika = sf1.parse(aika);
+            System.out.println(laiteaika);
+            long ika = (nyt.getTime()-laiteaika.getTime())/86400000;
+            System.out.println(ika);
+        } catch (ParseException e) {
+            System.out.println(e);
+            System.out.println("Väärässä mudossa aika " + sf1);
+        }
+        
     }
     
     
