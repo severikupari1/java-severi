@@ -24,7 +24,7 @@ public class Persons {
            index = ihmiset.size()+1;
        } 
        ihmiset.add(new Person(index, nimi, ika) );
-       
+       notifyAll();
    }
    
    public synchronized void MuutosKokoon(){
