@@ -13,12 +13,21 @@ import java.util.Scanner;
  */
 public class Ekathread implements Runnable{
 
+    Scanner lukija = new Scanner(System.in);
+    Persons ihminen;
+    
     @Override
     public void run() {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        Scanner lukija = new Scanner(System.in);
-       
         
+        while (true) {            
+            try {
+                System.out.println("Annas ihmisen nimi ja sitten ikä");
+                ihminen.LisaaIhminen(lukija.nextLine(), lukija.nextInt());
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        }
         
     }
     
