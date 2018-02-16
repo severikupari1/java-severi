@@ -5,10 +5,18 @@
  */
 package saikeet;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author s704383
  */
 public class Persons {
-   
+   private ArrayList<Person> ihmiset = new ArrayList<Person>();
+   private int index = 0;
+   public synchronized void LisaaIhminen(String nimi,int ika){
+       
+       ihmiset.add(new Person(index, nimi, ika) );
+       index++;
+   }
 }

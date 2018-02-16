@@ -47,6 +47,11 @@ public class Person {
     public void setIka(int ika) {
         this.ika = ika;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" + "id=" + id + ", nimi=" + nimi + ", ika=" + ika + '}';
+    }
     
     
     
