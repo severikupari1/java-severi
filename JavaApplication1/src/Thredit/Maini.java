@@ -15,5 +15,9 @@ public class Maini {
         LueTiedotThread lueTh = new LueTiedotThread(ihmiset1, 5000);
         Thread th1 = new Thread(lueTh);
         th1.start();
+        TulostaMuutosThredi tulostath = new TulostaMuutosThredi(ihmiset1, 2000);
+        Thread th2 = new Thread(tulostath);
+        th2.start();
+        
     }
 }

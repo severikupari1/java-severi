@@ -13,13 +13,23 @@ import java.util.ArrayList;
  */
 public class Persons {
     private ArrayList<Person> ihmiset = new ArrayList<Person>();
-
+    private boolean muutos;
     public Persons() {
     }
     
     public synchronized void LisaaIhminen(String nimi2,int ika2){
+        muutos = true;
         ihmiset.add(new Person(nimi2, ika2));
         System.out.println(ihmiset);
+    }
+    
+    public synchronized void PituudenMuutos(){
+        if (muutos) {
+            System.out.println("Bingo se tuli");
+            muutos = false;
+            
+        }
+        
     }
 
     public ArrayList<Person> getIhmiset() {
