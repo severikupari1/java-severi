@@ -14,7 +14,36 @@ import java.util.ArrayList;
 public class Persons {
    private ArrayList<Person> ihmiset = new ArrayList<>();
    private int index;
-   private double muutos;
+   private int muutos;
+
+    public ArrayList<Person> getIhmiset() {
+        return ihmiset;
+    }
+
+    public void setIhmiset(ArrayList<Person> ihmiset) {
+        this.ihmiset = ihmiset;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    public int getMuutos() {
+        return muutos;
+    }
+
+    public void setMuutos(int muutos) {
+        this.muutos = muutos;
+    }
+
+    public Persons(int index, int muutos) {
+        this.index = index;
+        this.muutos = muutos;
+    }
 
    public synchronized void LisaaIhminen(String nimi,int ika){
        if (ihmiset.isEmpty()) {
@@ -23,17 +52,17 @@ public class Persons {
        else{
            index = ihmiset.size()+1;
        } 
+       muutos = ihmiset.hashCode();
        ihmiset.add(new Person(index, nimi, ika) );
-       notifyAll();
+       //notifyAll();
    }
    
    public synchronized void MuutosKokoon(){
        while (true) {  
-           muutos = ihmiset.hashCode();
-           if (ihmiset.hashCode() != muutos) {
-               System.out.println("Bingo, Nysse tuli");
-           }
            
+           if (muutos != ihmiset.hashCode()) {
+               System.out.println("Ny se tuli");
+           }
            
        }
    }
