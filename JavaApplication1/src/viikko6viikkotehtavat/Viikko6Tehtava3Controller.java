@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 
 /**
  *
- * @author vtkinju
+ * @author s704383
  */
 public class Viikko6Tehtava3Controller {
 

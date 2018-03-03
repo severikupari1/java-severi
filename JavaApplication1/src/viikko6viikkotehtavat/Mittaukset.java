@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author vtkinju
+ * @author s704383
  */
 public class Mittaukset {
     private List<Mittaus> mittaukset = new ArrayList<Mittaus>();

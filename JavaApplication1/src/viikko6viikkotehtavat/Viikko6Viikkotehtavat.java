@@ -10,7 +10,7 @@ import javax.swing.SwingUtilities;
 
 /**
  *
- * @author vtkinju
+ * @author s704383
  */
 public class Viikko6Viikkotehtavat {
 

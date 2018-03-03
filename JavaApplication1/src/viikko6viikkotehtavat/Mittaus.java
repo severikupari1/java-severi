@@ -7,7 +7,7 @@ package viikko6viikkotehtavat;
 
 /**
  *
- * @author vtkinju
+ * @author s704383
  */
 public class Mittaus {
     private int lampotila;
