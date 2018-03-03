@@ -10,5 +10,9 @@ package viikko8_viimeinen;
  * @author Severi
  */
 public class Saatila {
+    private int lampotila;
+    private int tuulennopeus;
+    private int kosteusprosentti;
+    private int sademaaramm;
     
 }
