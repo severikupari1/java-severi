@@ -5,8 +5,7 @@
  */
 package Numbers;
 
-import java.util.Arrays;
-import java.util.Collections;
+
 
 
 
@@ -42,6 +41,47 @@ public class Numbers {
         
         
     }
+    
+    public int getCount(){
+        return numbercount;
+    }
+    
+    public int find( double value) {
+        int i = 0;
+     while(i < numbers.length){
+         if (numbers[i] == value) {
+             return i;
+         }
+         else{
+            i++;
+         }        
+     }
+      return -1;
+    }
+             
+             
+
+    
+    
+    
+    public double avg(){
+        double sum = 0.0;
+        for (int counter = 0; counter < numbers.length; counter++) {
+            sum += numbers[counter];
+        }
+        return sum / numbers.length;
+    }
+    
+    public double sum(){
+        double sum = 0.0;
+        for (int counter = 0; counter < numbers.length; counter++) {
+            sum += numbers[counter];
+        }
+        
+        return sum;
+    }
+    
+    
     
   
     
@@ -91,6 +131,9 @@ public class Numbers {
         for (int i = 0; i < numero.numbers.length; i++) {
             System.out.println(numero.numbers[i]);
         }
+        
+        System.out.println(numero.avg());
+        System.out.println(numero.find(1));
         
         
     }
