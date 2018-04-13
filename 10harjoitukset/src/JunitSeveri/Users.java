@@ -3,12 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Numbers;
+package JunitSeveri;
 
-/**
- *
- * @author Severi
- */
-class Primitive {
-    
+public class Users  extends java.util.ArrayList <User>
+{
+
+
 }
