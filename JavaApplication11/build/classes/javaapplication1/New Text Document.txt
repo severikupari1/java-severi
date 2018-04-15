@@ -1,0 +1,7 @@
+Laadi ohjelma, joka tallettaa viikonpäivät kolmella eri kielellä taulukkoon/taulukkoihin. 
+Kielet voit valita vapaasti. Ohjelman tulee tietojen tallettamisen jälkeen kysyä, monennenko 
+viikonpäivän nimen käyttäjä haluaa tietää ja millä kolmesta kielestä, sekä tulostaa vastaus näytölle.
+ LISÄYS: Mikäli joistakin teillä riittää aikaa, energiaa, sekä kiinnostusta, voitte toteuttaa viikonpäivien 
+tallettamisen siten, että ne luetaan tekstimuotoisesta alustustiedosta (esim. viikonpaivat.ini). 
+Tämä on yksi niistä tavoista, joilla asia oikeassa maailmassa tehdään. Tällaisessa toteutuksessa tarvitsette kuitenkin myöhemmin käsiteltäviä asioita, 
+erityisesti tiedostonkäsittelyä. Porkkanana voi toimivasta alustustiedostoja hyödyntävästä toteutuksesta saada 3 bonuspistettä.
