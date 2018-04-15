@@ -42,5 +42,12 @@ public class lainaaja extends Lainaukset{
              System.out.println(video.toString());
          }
      }
+
+    @Override
+    public String toString() {
+        return "lainaaja{" + "etunimi=" + etunimi + ", sukunimi=" + sukunimi + ", cdLukumr=" + super.getCdt().size() + ", kirjaLukumr=" + super.getKirjat().size() + ", videotLukumr=" + super.getVideot().size() +'}';
+    }
    
+     
+     
 }

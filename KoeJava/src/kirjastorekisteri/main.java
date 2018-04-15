@@ -19,5 +19,6 @@ public class main {
         lainaus.lisaaCd(cd);
          lainaus.lisaaCd(cd);
         lainaus.tulostaCdt();
+        System.out.println(lainaus.toString());
     }
 }
