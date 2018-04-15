@@ -18,6 +18,11 @@ public class Cdt extends Perustiedot{
         this.artisti = artisti;
     }
 
+    @Override
+    public String toString() {
+        return "Cdt{" + "artisti=" + artisti + '}';
+    }
+
     
     
 }

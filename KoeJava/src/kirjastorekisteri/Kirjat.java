@@ -16,6 +16,11 @@ public class Kirjat extends Perustiedot{
         super(kieli, kommentti, otsikko);
         this.sivunumero = sivunumero;
     }
+
+    @Override
+    public String toString() {
+        return "Kirjat{" + "sivunumero=" + sivunumero + '}';
+    }
     
 
    

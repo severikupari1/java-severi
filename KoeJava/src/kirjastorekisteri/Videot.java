@@ -22,6 +22,12 @@ public class Videot extends Perustiedot{
         this.pituus = pituus;
     }
 
+    
+
+    @Override
+    public String toString() {
+        return "Videot{" + "ohjaaja=" + ohjaaja + ", pituus=" + pituus + '}';
+    }
    
 
     

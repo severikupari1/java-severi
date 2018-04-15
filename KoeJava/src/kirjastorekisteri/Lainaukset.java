@@ -6,6 +6,7 @@
 package kirjastorekisteri;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  *
@@ -21,14 +22,56 @@ public class Lainaukset{
 
     private ArrayList videot;
 
-    public Lainaukset(String lainauspvm, String palautuspvm, ArrayList kirjat, ArrayList cdt, ArrayList videot) {
+    public Lainaukset(String lainauspvm, String palautuspvm) {
         this.lainauspvm = lainauspvm;
         this.palautuspvm = palautuspvm;
         this.kirjat = new ArrayList();
         this.cdt = new ArrayList();
         this.videot = new ArrayList();
     }
+
+    public String getLainauspvm() {
+        return lainauspvm;
+    }
+
+    public void setLainauspvm(String lainauspvm) {
+        this.lainauspvm = lainauspvm;
+    }
+
+    public String getPalautuspvm() {
+        return palautuspvm;
+    }
+
+    public void setPalautuspvm(String palautuspvm) {
+        this.palautuspvm = palautuspvm;
+    }
+
+    public void lisaaCd(Cdt cd){
+        cdt.add(cd);
+    }
+    
+    public void lisaaVideo(Videot video){
+        videot.add(video);
+    }
+    
+    public void lisaaKirja(Kirjat kirja){
+        kirjat.add(kirja);
+    }
+
+    public ArrayList getKirjat() {
+        return kirjat;
+    }
+
+    public ArrayList getCdt() {
+        return cdt;
+    }
+
+    public ArrayList getVideot() {
+        return videot;
+    }
     
     
+    
+        
     
 }

@@ -11,6 +11,13 @@ package kirjastorekisteri;
  */
 public class main {
     public static void main(String[] args) {
+        Cdt cd = new Cdt("asd", "kieli", "kommentti", "otsikko");
         
+
+        lainaaja lainaus = new lainaaja("etunimi", "etunimi", "etunimi", "etunimi");
+        
+        lainaus.lisaaCd(cd);
+         lainaus.lisaaCd(cd);
+        lainaus.tulostaCdt();
     }
 }
